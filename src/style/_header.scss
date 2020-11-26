@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $container-padding-y $container-padding-x;
+  border-bottom: solid 1px $border-color;
+  .title {
+    font-size: 38px;
+  }
+  nav {
+    @extend .menu;
+    @extend .btn-style;
+  }
+}

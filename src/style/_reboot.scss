@@ -12,6 +12,9 @@ body {
   color: $color-base;
   background-color: $body-bg;
   line-height: $line-height-base;
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
 }
 
 * {
@@ -38,9 +41,25 @@ button {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  border-radius: 30px;
+  padding: $btn-padding-y $btn-padding-x;
+  border: 1px solid $primary-color;
+  cursor: pointer;
+  &:focus {
+    outline: 0;
+  }
 }
 
 h1 {
   color: $heading-color;
   margin: 0;
+}
+
+p {
+  margin: 0;
+}
+input {
+  border: 0px;
+  border-bottom: 1px solid $border-color;
+  background: transparent;
 }

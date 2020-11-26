@@ -1,0 +1,20 @@
+.menu {
+  > ul {
+    display: flex;
+    > li {
+      margin-right: 5px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.btn-style {
+  .login-btn {
+    @include btn-variant($primary-color, $body-bg);
+  }
+  .signup-btn {
+    @include btn-variant($white, $primary-color);
+  }
+}
